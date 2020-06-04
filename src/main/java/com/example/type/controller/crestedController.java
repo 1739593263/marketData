@@ -14,7 +14,7 @@ import java.util.Map;
 @ResponseBody
 @Controller
 @RequestMapping("/Created")
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("http://10.0.0.116:8081")
 public class crestedController {
 
     @RequestMapping("/getProduces")

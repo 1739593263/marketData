@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("http://10.0.0.116:8081")
 @RequestMapping("login")
 public class loginController {
 
