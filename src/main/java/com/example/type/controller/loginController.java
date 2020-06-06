@@ -35,13 +35,13 @@ public class loginController {
         map.put("user",user);
         map.put("pwd",pwd);
         if(user.startsWith("A")&&"123".equals(pwd)){
-            return message.success().add("data",map).add("pro","survey");
+            return message.success().add("data",map).add("pro","survey").add("type","调研员");
         }else if (user.startsWith("B")&&"123".equals(pwd)){
-            return message.success().add("data",map).add("pro","warehouse");
+            return message.success().add("data",map).add("pro","warehouse").add("type","仓库员");
         }else if (user.startsWith("C")&&"123".equals(pwd)){
-            return message.success().add("data",map).add("pro","business");
+            return message.success().add("data",map).add("pro","business").add("type","业务员");
         }else if (user.startsWith("D")&&"123".equals(pwd)){
-            return message.success().add("data",map).add("pro","admin");
+            return message.success().add("data",map).add("pro","admin").add("type","管理员");
         }else{
             Map<String, Object> errors = new HashMap<>();
             if(!user.startsWith("A")&&
